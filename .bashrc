@@ -24,7 +24,7 @@ get_branch_color()
     else
         # 上記以外の状態の場合は青色で表示させる
         printf "\e[34m" # BLUE
-	fi
+    fi
 }
 
 preprompt()
