@@ -16,8 +16,8 @@ get_branch_color()
         # git addされていないファイルがある状態
 		printf "\e[31m" # RED
 	elif [[ -n `echo "$st" | grep "^Untracked files"` ]]; then
-    	# gitに管理されていないファイルがある状態
-    	printf "\e[31m" # RED
+		# gitに管理されていないファイルがある状態
+		printf "\e[31m" # RED
     elif [[ -n `echo "$st" | grep "^Changes to be committed"` ]]; then
         # git commitされていないファイルがある状態
 		printf "\e[33m" # YELLOW
